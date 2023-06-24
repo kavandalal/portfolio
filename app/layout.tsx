@@ -23,10 +23,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			</head>
 
 			<body className='bg-black'>
-				<div className=' from-black via-zinc-600/20 to-black text-white'>
-					<Particles className='absolute inset-0 -z-10 animate-fade-in' quantity={100} />
-					{children}
-				</div>
+				{/* <div className=' from-black via-zinc-600/20 to-black text-white'>
+					<Particles className='absolute inset-0 -z-10 animate-fade-in' quantity={100} /> */}
+				{children}
+				{/* </div> */}
 			</body>
 		</html>
 	);

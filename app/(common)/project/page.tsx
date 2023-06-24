@@ -1,7 +1,10 @@
+import Particles from '@/ui/particles';
+
 export default function Page() {
 	return (
-		<div className='container flex items-center justify-center min-h-screen px-4 mx-auto text-vercel-orange'>
-			Work Under Process
-		</div>
+		<section>
+			<Particles className='absolute inset-0 -z-10 animate-fade-in' quantity={100} />
+			<div className=' text-vercel-orange'>Work In Process</div>
+		</section>
 	);
 }

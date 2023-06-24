@@ -80,13 +80,31 @@ export default function Particles({
 		magnetism: number;
 	};
 
+	const getTotalPageHeight = () => {
+		const { body, documentElement } = document;
+		const height = Math.max(
+			// body.scrollHeight,
+			// body.offsetHeight,
+			documentElement.clientHeight,
+			// documentElement.scrollHeight
+			documentElement.offsetHeight
+		);
+		return height - 5;
+	};
+
 	const resizeCanvas = () => {
+		if (canvasContainerRef.current) {
+			canvasContainerRef.current.style.height = getTotalPageHeight() + 'px';
+		}
+
 		if (canvasContainerRef.current && canvasRef.current && context.current) {
 			circles.current.length = 0;
 			canvasSize.current.w = canvasContainerRef.current.offsetWidth;
 			canvasSize.current.h = canvasContainerRef.current.offsetHeight;
+
 			canvasRef.current.width = canvasSize.current.w * dpr;
 			canvasRef.current.height = canvasSize.current.h * dpr;
+
 			canvasRef.current.style.width = `${canvasSize.current.w}px`;
 			canvasRef.current.style.height = `${canvasSize.current.h}px`;
 			context.current.scale(dpr, dpr);
@@ -209,7 +227,7 @@ export default function Particles({
 	};
 
 	return (
-		<div className={className} ref={canvasContainerRef} aria-hidden='true'>
+		<div className={className} ref={canvasContainerRef} aria-hidden='true' style={{ overflow: 'hidden' }}>
 			<canvas ref={canvasRef} />
 		</div>
 	);
