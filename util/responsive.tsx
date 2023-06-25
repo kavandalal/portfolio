@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useLayoutEffect } from 'react';
 
 interface useResponsive {
 	type?: 'resize' | 'color';
@@ -6,11 +6,11 @@ interface useResponsive {
 	resolution?: 'lg' | 'md' | 'sm';
 }
 const useResponsive = ({ type = 'resize', from = 'down', resolution = 'sm' }: useResponsive) => {
-	const [matches, setMatches] = useState(false);
+	const [matches, setMatches] = useState<Boolean | null>(null);
 	const key = from === 'down' ? 'max-width' : 'min-width';
-	const res = resolution === 'lg' ? 1280 : resolution === 'md' ? 991 : 768;
+	let res = resolution === 'lg' ? 1279 : resolution === 'md' ? 990 : 767;
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const mediaQuery = window.matchMedia(`(${key}:${res}px)`);
 
 		const handleChange = (event: MediaQueryListEvent) => {
