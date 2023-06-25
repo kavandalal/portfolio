@@ -11,21 +11,21 @@ const socials = [
 		href: 'https://www.linkedin.com/in/kavan-dalal/',
 		label: 'Linkedin',
 		handle: 'Kavan Dalal',
-		initial: { x: 400, y: 400 },
+		initial: { x: 200, y: 200 },
 	},
 	{
 		icon: <Github size={20} />,
 		href: 'https://github.com/kavandalal',
 		label: 'Github',
 		handle: 'kavandalal',
-		initial: { y: 400 },
+		initial: { y: 200 },
 	},
 	{
 		icon: <Mail size={20} />,
 		href: 'mailto:kavandalal.work@gmail.com',
 		label: 'Email (Google)',
 		handle: 'kavandalal.work',
-		initial: { x: -400, y: 400 },
+		initial: { x: -200, y: 200 },
 	},
 ];
 
@@ -40,7 +40,7 @@ export default function Page() {
 							<Link
 								href={s.href}
 								target='_blank'
-								className='p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48 sm:p-8 md:p-16 bg-gradient-to-tl from-zinc-900/10 via-zinc-400/10 to-zinc-900/10 h-full'>
+								className='p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-18  lg:pb-24 sm:p-8 md:p-16 bg-gradient-to-tl from-zinc-900/10 via-zinc-400/10 to-zinc-900/10 h-full'>
 								<span
 									className='absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent'
 									aria-hidden='true'

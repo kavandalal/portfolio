@@ -1,6 +1,14 @@
+'use client';
 import './globals.css';
 import Particles from '../ui/particles';
 import { Metadata } from 'next';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+// Add the imported icons to the library
+library.add(fas);
 
 export const metadata: Metadata = {
 	title: {
