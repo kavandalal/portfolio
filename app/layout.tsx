@@ -1,4 +1,4 @@
-import './globals.css';
+// import './globals.css';
 // import Particles from '../ui/particles';
 import { Metadata } from 'next';
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				/>
 			</head>
 
-			<body className='bg-black'>
+			<body className='bg-black overflow-x-hidden'>
 				{/* <div className=' from-black via-zinc-600/20 to-black text-white'>
 					<Particles className='absolute inset-0 -z-10 animate-fade-in' quantity={100} /> */}
 				{children}

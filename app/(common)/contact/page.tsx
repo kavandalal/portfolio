@@ -33,9 +33,9 @@ export default function Page() {
 	return (
 		<section className=''>
 			<Particles className='absolute inset-0 -z-10 animate-fade-in' quantity={100} />
-			<div className='grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16'>
+			<div className='grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-3 lg:gap-16'>
 				{socials.map((s) => (
-					<Box initial={s.initial} delay={0.3} ease={'easeIn'} key={s.href}>
+					<Box initial={s.initial} delay={0} ease={'easeIn'} key={s.href}>
 						<Card>
 							<Link
 								href={s.href}
