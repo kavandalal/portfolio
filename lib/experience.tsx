@@ -13,6 +13,7 @@ export interface Experience {
 	identitfier: string;
 	name: string;
 	companyLogo: string;
+	link: string;
 	role: string;
 	description: string[];
 	location?: string;
@@ -27,13 +28,21 @@ export const experience: Experience[] = [
 		name: 'Samaaro',
 		companyLogo: '/company/samaaro-logo.png',
 		role: 'Product Engineer',
-		description: ['<li>sdfsdfsd</li>', '<li>vcx gfgw werwerwe</li>', '<li>sdfe werwerqw qweqweqw ewqwe</li>'],
+		link: 'https://www.samaaro.com/',
+		description: [
+			'A team member in a two-person development team who autonomously developed a new standalone product, taking responsibility for various aspects including UI development(React), database architecture(MongoDB), backend route, integrating third-party services, task automation, and creating reusable components and hooks.',
+			'Led the development of 8 projects while gaining insights from their perspectives on different approaches taken during the tasks.',
+			'Contributed to the automation of 10 modules on the demo platform.',
+			'Integration of Microsoft Teams in MERN stack app',
+			'Joined the hiring team after being with the company for 5 months.',
+			'Worked with 3rd party software like Microsoft Power Automate, Google Cloud NLP, Google Cloud Vision AI, Facebook API, Twilio, Gupshup, Send Grid, etc.',
+		],
 		location: 'Bengaluru, Karnataka, India',
 		start: { date: '1', month: 'Sep', year: '2022' },
 		end: 'current',
 		workedWith: {
 			lang: ['HTML', 'CSS', 'Javascript'],
-			framework: ['React.js', 'EJS', 'Jqeury', 'Express.js', 'Bootstrap', 'MUI'],
+			framework: ['React.js', 'EJS', 'Jquery', 'Express.js', 'Bootstrap', 'MUI'],
 			tool: ['Git', 'Jira'],
 		},
 	},
@@ -41,10 +50,12 @@ export const experience: Experience[] = [
 		identitfier: 'staah',
 		name: 'Staah',
 		companyLogo: '/company/staah-logo.png',
+		link: 'https://www.staah.com/',
 		role: 'Front End Developer',
 		description: [
-			'<li>Started the implementation of optimizing the code to prevent unnecessary rendering of components with the help of <b>useCallback</b>,<b>useMemo</b>, <b>memo</b> which increased the performance by 40%.</li>',
-			'<li>sdfe werwerqw qweqweqw ewqwe</li>',
+			'Started the implementation of optimizing the code to prevent unnecessary rendering of components with the help of useCallback,useMemo, memo which increased the performance by 40%.',
+			'Constant optimising and refinig of code',
+			'Developed over 12 modules from start to end',
 		],
 		location: 'Surat, Gujarat, India',
 		start: { date: '1', month: 'Jun', year: '2022' },
@@ -56,15 +67,16 @@ export const experience: Experience[] = [
 		},
 	},
 	{
-		identitfier: 'staah',
+		identitfier: 'staah-intern',
 		name: 'Staah',
 		companyLogo: '/company/staah-logo.png',
+		link: 'https://www.staah.com/',
 		role: 'Front End Developer (Intern)',
 		description: [
-			'<li>Made all the report charts for straight forward interpretation with the help of <b>charts.js</b> in React.</li>',
-			'<li>Helped in implementation of <b>useContext</b> hook in the project.</li>',
-			'<li>Styling component with the help of <b>bootstrap</b> for better user experience.</li>',
-			'<li>Making common components for code <b>reusability</b> and <b>scalability</b> in consideration.</li>',
+			'Made all the report charts for straight forward interpretation with the help of charts.js in React.',
+			'Helped in implementation of useContext hook in the project.',
+			'Styling component with the help of bootstrap for better user experience.',
+			'Making common components for code reusability and scalability in consideration.',
 		],
 		location: 'Surat, Gujarat, India',
 		start: { date: '1', month: 'Dec', year: '2021' },
