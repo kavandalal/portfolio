@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -10,14 +11,15 @@ interface Box {
 	ease?: string;
 	delay?: number;
 	children: React.ReactNode;
+	customClass?: string;
 }
 export default function Box(props: Box) {
-	const { initial, ease, delay, children } = props;
+	const { initial, ease, delay, children, customClass } = props;
 	const control = useAnimation();
 	const [ref, inView] = useInView();
 
 	const exampleVariant = {
-		hidden: { x: 0, y: 0, ...initial, opacity: 0 },
+		hidden: { x: initial.x || 0, y: initial.y || 0, opacity: 0 },
 		visible: { x: 0, y: 0, opacity: 1 },
 	};
 
@@ -35,10 +37,10 @@ export default function Box(props: Box) {
 			// initial={{ x: 0 , y : 0 , ...initial, opacity: 0 }}
 			// animate={{ x: 0, y: 0, opacity: 1 }}
 			initial='hidden'
-			// animate='visible'
-			ref={ref}
 			animate={control}
-			transition={{ delay: delay || 1, ease: ease || 'easeIn' }}>
+			ref={ref}
+			transition={{ delay: delay || 1, ease: ease || 'easeIn' }}
+			className={clsx(customClass)}>
 			{children}
 		</motion.div>
 	);
