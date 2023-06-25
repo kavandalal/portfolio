@@ -1,4 +1,3 @@
-'use client';
 import './globals.css';
 // import Particles from '../ui/particles';
 import { Metadata } from 'next';
