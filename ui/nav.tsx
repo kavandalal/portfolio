@@ -1,5 +1,5 @@
 'use client';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Menu } from 'lucide-react';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { useSelectedLayoutSegment } from 'next/navigation';
@@ -68,7 +68,8 @@ export const Navigation: React.FC = () => {
 					className='group absolute top-0 right-0 flex h-14 items-center gap-x-2 px-4 lg:hidden'
 					onClick={() => setIsOpen(!isOpen)}>
 					<div className='font-medium text-gray-100 group-hover:text-gray-400'>
-						<FontAwesomeIcon icon={'bars'} />
+						{/* <FontAwesomeIcon icon={'bars'} /> */}
+						<Menu className='w-6 h-6 ' />
 					</div>
 				</button>
 
