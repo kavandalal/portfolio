@@ -11,7 +11,6 @@ export default function Page() {
 	return (
 		<section>
 			<Particles className='absolute inset-0 -z-10 animate-fade-in' quantity={150} />
-			{/* <div className='text-vercel-orange'>Work In Process</div> */}
 			<div className='grid gap-24 container' style={{ gridTemplateRows: 'auto auto' }}>
 				<div className='grid gap-5' style={{ gridTemplateColumns: lgDown ? '1fr' : '1fr 2fr' }}>
 					<PhotoSection />
