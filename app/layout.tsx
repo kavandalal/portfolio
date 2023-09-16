@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 		template: '%s | Kavan Dalal',
 	},
 	description: 'Portfolio of Kavan Dalal',
+	authors: [ { name : 'Kavan Dalal' , url : 'https://www.linkedin.com/in/kavan-dalal/'} ],
 	openGraph: {
 		title: 'Kavan Dalal Portfolio',
-		authors: 'Kavan Dalal',
 		description: 'The React Framework for the Web',
 		url: 'https://portfolio-kavan.vercel.app/',
 	},
