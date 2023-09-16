@@ -37,14 +37,16 @@ const ProjectItem = ({ data }: { data: Project }) => {
 				</div>
 
 				<ul className='flex flex-col gap-4'>
-					{data.description.map((point) => (
-						<li>{point}</li>
+					{data.description.map((point, ind) => (
+						<li key={ind}>{point}</li>
 					))}
 				</ul>
 
 				<div className='flex gap-2'>
-					{data?.techStack.map((item) => (
-						<div className='border rounder px-2 py-1 rounded'>{item}</div>
+					{data?.techStack.map((item, ind) => (
+						<div className='border rounder px-2 py-1 rounded' key={ind}>
+							{item}
+						</div>
 					))}
 				</div>
 			</div>
