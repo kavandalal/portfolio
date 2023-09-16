@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 		follow: true,
 	},
 	openGraph: {
-		siteName: 'kavan dalal portfolio',
-		title: 'Kavan Dalal Portfolio',
+		siteName: 'kavan dalal',
+		title: 'Kavan Dalal',
 		description: 'Portfolio website of Kavan Dalal',
 		url: 'https://www.linkedin.com/in/kavan-dalal/',
 	},
