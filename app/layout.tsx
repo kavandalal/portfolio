@@ -8,11 +8,17 @@ export const metadata: Metadata = {
 		template: '%s | Kavan Dalal',
 	},
 	description: 'Portfolio of Kavan Dalal',
-	authors: [ { name : 'Kavan Dalal' , url : 'https://www.linkedin.com/in/kavan-dalal/'} ],
+	authors: { name: 'Kavan Dalal', url: 'https://avatars.githubusercontent.com/u/67893720?v=4' },
+	robots: {
+		index: false,
+		nocache: true,
+		follow: true,
+	},
 	openGraph: {
+		siteName: 'kavan dalal portfolio',
 		title: 'Kavan Dalal Portfolio',
-		description: 'The React Framework for the Web',
-		url: 'https://portfolio-kavan.vercel.app/',
+		description: 'Portfolio website of Kavan Dalal',
+		url: 'https://www.linkedin.com/in/kavan-dalal/',
 	},
 };
 
