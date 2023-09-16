@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 	description: 'Portfolio of Kavan Dalal',
 	authors: { name: 'Kavan Dalal', url: 'https://avatars.githubusercontent.com/u/67893720?v=4' },
 	robots: {
-		index: false,
+		index: true,
 		nocache: true,
 		follow: true,
 	},
