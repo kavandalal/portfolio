@@ -59,15 +59,6 @@ export const project: Project[] = [
 		live: 'https://shopping-jugad.herokuapp.com/',
 	},
 
-	// {
-	// 	identitfier: 'dsa',
-	// 	title: 'DSA - Python',
-	// 	description: ['Project just to keep all the dsa question that I have solved'],
-	// 	techStack: ['Python'],
-	// 	github: 'https://github.com/kavandalal/dsa',
-	// 	live: '',
-	// },
-
 	{
 		identitfier: 'chartjs-react',
 		title: 'Chart.js',
@@ -82,7 +73,7 @@ export const project: Project[] = [
 
 	{
 		identitfier: '2d-game',
-		title: 'Twitter Clone',
+		title: '2D Game',
 		description: ['Just the basic layout of 2D game like pokemon, with boundaries and walkling animation'],
 		techStack: ['HTML', 'CSS', 'JS'],
 		github: 'https://github.com/kavandalal/2d-game',

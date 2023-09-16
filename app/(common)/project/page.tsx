@@ -25,11 +25,11 @@ const ProjectItem = ({ data }: { data: Project }) => {
 				<div className='header flex justify-between'>
 					<div className='font-bold text-2xl text-blue-300'>{data.title}</div>
 					<div className='flex gap-3'>
-						<Link className='hover:text-blue-300' href={`/${data.github}`} target='_blank'>
+						<Link className='hover:text-blue-300' href={data.github.toString()} target='_blank'>
 							<Github />
 						</Link>
 						{data.live && (
-							<Link className='hover:text-blue-300' href={`/${data.live}`} target='_blank'>
+							<Link className='hover:text-blue-300' href={data.live.toString()} target='_blank'>
 								<ExternalLink />
 							</Link>
 						)}
