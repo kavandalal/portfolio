@@ -7,7 +7,13 @@ export const metadata: Metadata = {
 		default: 'Kavan Dalal',
 		template: '%s | Kavan Dalal',
 	},
-	description: 'This website is portfolio of Kavan Dalal',
+	description: 'Portfolio of Kavan Dalal',
+	openGraph: {
+		title: 'Kavan Dalal Portfolio',
+		authors: 'Kavan Dalal',
+		description: 'The React Framework for the Web',
+		url: 'https://portfolio-kavan.vercel.app/',
+	},
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
