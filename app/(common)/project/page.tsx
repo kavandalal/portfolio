@@ -42,7 +42,7 @@ const ProjectItem = ({ data }: { data: Project }) => {
 					))}
 				</ul>
 
-				<div className='flex gap-2'>
+				<div className='flex gap-2 flex-wrap'>
 					{data?.techStack.map((item, ind) => (
 						<div className='border rounder px-2 py-1 rounded' key={ind}>
 							{item}
