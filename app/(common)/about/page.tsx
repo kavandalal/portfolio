@@ -72,10 +72,9 @@ const DescSection = () => {
 				Hello there! I&#39;m Kavan Dalal, a code maestro who&#39;s been known to turn tea into functional software. My
 				arsenal includes JavaScript and TypeScript - because let&#39;s face it, they&#39;re practically the real
 				superheroes of the tech world. React.js, Next.js, and Express.js are like my sidekicks, helping me craft web
-				magic that leaves users spellbound. I&#39;ve dabbled in a bit of jQuery, but who needs it when you can summon
-				React components like magic spells? And yes, I&#39;m the proud owner of a shadcn-ui secret decoder ring –
-				kidding, but my skills extend to Python as well. When I&#39;m not weaving code, I&#39;m dealing with Git, Jira,
-				and the bunch.
+				magic that leaves users spellbound. I&#39;ve worked with jQuery a bit, but who needs it when you can summon
+				React components like magic spells? And yes, my skills extend to Python as well. When I&#39;m not weaving code,
+				I&#39;m dealing with Git, Jira, and the bunch.
 			</div>
 			<div>
 				My virtual doorstep is always open for collaboration, chit-chat, or a good ol&#39; debate on whether JavaScript
