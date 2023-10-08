@@ -66,15 +66,16 @@ export const Navigation: React.FC = () => {
 						'fixed inset-x-0 bottom-0 top-14 mt-px ': !isOpen,
 					})}>
 					<nav className='space-y-3 lg:space-y-0 lg:space-x-5  px-2 py-2 lg:py-5 flex flex-col lg:flex-row'>
-						{navigation.map((section) => {
-							return (
-								<div key={section.name} className='my-auto'>
-									<div className='space-y-1 '>
-										<NavItem key={section.href} item={{ link: section.href, name: section.name }} close={close} />
+						{isOpen &&
+							navigation.map((section) => {
+								return (
+									<div key={section.name} className='my-auto'>
+										<div className='space-y-1 '>
+											<NavItem key={section.href} item={{ link: section.href, name: section.name }} close={close} />
+										</div>
 									</div>
-								</div>
-							);
-						})}
+								);
+							})}
 					</nav>
 				</div>
 			</div>
@@ -94,7 +95,7 @@ interface NavItemProp {
 function NavItem({ item, close }: NavItemProp) {
 	const segment = useSelectedLayoutSegment();
 	const { link, name } = item;
-	const isActive = link === segment;
+	const isActive = link.toLowerCase() === segment;
 
 	return (
 		<Link
