@@ -63,19 +63,16 @@ export const Navigation: React.FC = () => {
 
 				<div
 					className={clsx('overflow-y-auto lg:static lg:block', {
-						'fixed inset-x-0 bottom-0 top-14 mt-px ': !isOpen,
+						'fixed inset-x-0 bottom-0 top-14 mt-px hidden': !isOpen,
 					})}>
-					<nav className='space-y-3 lg:space-y-0 lg:space-x-5  px-2 py-2 lg:py-5 flex flex-col lg:flex-row'>
-						{isOpen &&
-							navigation.map((section) => {
-								return (
-									<div key={section.name} className='my-auto'>
-										<div className='space-y-1 '>
-											<NavItem key={section.href} item={{ link: section.href, name: section.name }} close={close} />
-										</div>
-									</div>
-								);
-							})}
+					<nav className='space-y-3 lg:space-y-0 lg:space-x-5 px-2 py-2 lg:py-5 flex flex-col lg:flex-row'>
+						{navigation.map((section) => (
+							<div key={section.name} className='my-auto'>
+								<div className='space-y-1 '>
+									<NavItem key={section.href} item={{ link: section.href, name: section.name }} close={close} />
+								</div>
+							</div>
+						))}
 					</nav>
 				</div>
 			</div>
