@@ -54,10 +54,12 @@ export const techStack: TechStack[] = [
 		title: 'Cloud Service',
 		value: [
 			{ name: 'AWS S3', icon: '', id: 's3' },
+			{ name: 'AWS EC2', icon: '', id: 'ec2' },
 			{ name: 'Cloudinary', icon: '', id: 'cloudinary' },
 			{ name: 'Firebase', icon: '', id: 'firebase' },
 			{ name: 'Vercel', icon: '', id: 'vercel' },
 			{ name: 'Heroku', icon: '', id: 'heroku' },
+			{ name: 'Hostinger', icon: '', id: 'hostinger' },
 		],
 	},
 

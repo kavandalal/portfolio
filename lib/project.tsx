@@ -10,6 +10,20 @@ export interface Project {
 
 export const project: Project[] = [
 	{
+		identitfier: 'tanish',
+		title: 'Tanish (Wedding App)',
+		description: [
+			'Created an application which is a social media for the specific wedding with different event (i.e. Marriage, Reception, Sangeet, etc).',
+			'This application has different protected routes and different role-based authentication.',
+			"It also has different features like Upload Post according to event with caption, Like post, View other's profile, Filter Post according to events, Events Timeline Graph, Explore page with the Top Liked Post, etc.",
+			'Bought the domain from Hostinger, created an EC2 instance, S3 Bucket in AWS and used MongoDB, used PM2 to manage the server.',
+			'This app is made in Next.js 13.4v',
+		],
+		techStack: ['Next.js', 'MongoDB', 'AWS EC2', 'AWS S3', 'Tailwind', 'PM2', 'Hostinger'],
+		github: 'https://github.com/kavandalal/tanish',
+		live: 'https://thetanishwedding.in/',
+	},
+	{
 		identitfier: 'modules-next',
 		title: 'Modules',
 		description: [
