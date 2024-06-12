@@ -24,6 +24,22 @@ export interface Experience {
 
 export const experience: Experience[] = [
 	{
+		identitfier: 'bik',
+		name: 'Bik.ai',
+		companyLogo: '/company/bik-logo.jpeg',
+		role: 'Software Engineer',
+		link: 'https://bik.ai/',
+		description: [],
+		location: 'Bengaluru, Karnataka, India',
+		start: { date: '10', month: 'June', year: '2024' },
+		end: 'current',
+		workedWith: {
+			lang: ['HTML', 'CSS', 'Javascript', 'Python'],
+			framework: ['Next.js', 'Django'],
+			tool: ['Git', 'Jira'],
+		},
+	},
+	{
 		identitfier: 'samaaro',
 		name: 'Samaaro',
 		companyLogo: '/company/samaaro-logo.png',
@@ -39,7 +55,7 @@ export const experience: Experience[] = [
 		],
 		location: 'Bengaluru, Karnataka, India',
 		start: { date: '1', month: 'Sep', year: '2022' },
-		end: 'current',
+		end: { date: '7', month: 'June', year: '2024' },
 		workedWith: {
 			lang: ['HTML', 'CSS', 'Javascript'],
 			framework: ['React.js', 'EJS', 'Jquery', 'Express.js', 'Bootstrap', 'MUI'],

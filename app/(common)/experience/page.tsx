@@ -113,24 +113,26 @@ const ExpComponent = (props: ExpComponent) => {
 						initial={{ x: lgDown ? 0 : evenElement ? 200 : -200, y: lgDown ? 200 : 0 }}
 						delay={0.3}
 						customClass='space-y-4 lg:space-y-4'>
-						<SingleRowData index={index} icon={<ListChecks />} noReverse>
-							<h4>Tasks</h4>
-							<ul className='text-sm lg:text-base text-gray-200/60 '>
-								{item?.description?.map((html, index) => (
-									<li
-										className='text-justify mb-3'
-										key={index}
-										dangerouslySetInnerHTML={{ __html: html } as HTMLProps}
-									/>
-								))}
-							</ul>
-						</SingleRowData>
+						{item?.description?.length > 0 && (
+							<SingleRowData index={index} icon={<ListChecks />} noReverse>
+								<h4>Tasks</h4>
+								<ul className='text-sm lg:text-base text-gray-200/60 '>
+									{item?.description?.map((html, index) => (
+										<li
+											className='text-justify mb-3'
+											key={index}
+											dangerouslySetInnerHTML={{ __html: html } as HTMLProps}
+										/>
+									))}
+								</ul>
+							</SingleRowData>
+						)}
 
 						<SingleRowData icon={<Cpu />} index={index} noReverse>
 							<div className='space-y-3'>
 								<h4>Tech</h4>
 								<div>
-									<div>Language Used</div>
+									<div>Language</div>
 									<div className={clsx('flex flex-wrap space-x-2 ')}>
 										{item.workedWith?.lang?.map((i, index2) => (
 											<Hashtag text={i} key={index2} />
@@ -139,7 +141,7 @@ const ExpComponent = (props: ExpComponent) => {
 								</div>
 
 								<div>
-									<div>Farmework Used </div>
+									<div>Farmework </div>
 									<div className={clsx('flex flex-wrap space-x-2 ')}>
 										{item.workedWith?.framework?.map((i, index2) => (
 											<Hashtag text={i} key={index2} />
@@ -147,7 +149,7 @@ const ExpComponent = (props: ExpComponent) => {
 									</div>
 								</div>
 								<div>
-									<div>Tools Used</div>
+									<div>Tools</div>
 									<div className={clsx('flex flex-wrap space-x-2 ')}>
 										{item.workedWith?.tool?.map((i, index2) => (
 											<Hashtag text={i} key={index2} />

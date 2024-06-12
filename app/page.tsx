@@ -74,10 +74,10 @@ export default function Home() {
 					<h2 className='text-md text-zinc-500 '>
 						Fullstack Developer <br />
 						Currently working in{' '}
-						<Link target='_blank' href='https://samaaro.com/' className='underline duration-500 hover:text-zinc-300'>
-							Samaaro
+						<Link target='_blank' href='https://bik.ai/' className='underline duration-500 hover:text-zinc-300'>
+							Bik.ai
 						</Link>{' '}
-						as a Product Engineer
+						as a Software Engineer
 					</h2>
 				</div>
 			</section>
