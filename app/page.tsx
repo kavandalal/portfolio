@@ -77,7 +77,7 @@ export default function Home() {
 						<Link target='_blank' href='https://bik.ai/' className='underline duration-500 hover:text-zinc-300'>
 							Bik.ai
 						</Link>{' '}
-						as a Software Engineer
+						as a Software Engineer 2
 					</h2>
 				</div>
 			</section>

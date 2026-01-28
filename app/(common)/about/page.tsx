@@ -69,16 +69,25 @@ const DescSection = () => {
 	return (
 		<div className='mx-auto h-full flex justify-center items-center text-lg flex-col gap-5'>
 			<div>
-				Hello there! I&#39;m Kavan Dalal, a code maestro who&#39;s been known to turn tea into functional software. My
+				{/* Hello there! I&#39;m Kavan Dalal, a code maestro who&#39;s been known to turn tea into functional software. My
 				arsenal includes JavaScript and TypeScript - because let&#39;s face it, they&#39;re practically the real
 				superheroes of the tech world. React.js, Next.js, and Express.js are like my sidekicks, helping me craft web
 				magic that leaves users spellbound. I&#39;ve worked with jQuery a bit, but who needs it when you can summon
 				React components like magic spells? And yes, my skills extend to Python as well. When I&#39;m not weaving code,
-				I&#39;m dealing with Git, Jira, and the bunch.
+				I&#39;m dealing with Git, Jira, and the bunch.  */}
+				Hello! I’m Kavan Dalal, a Full-Stack Software Engineer with 4+ years of experience turning ideas into reliable,
+				production-ready systems. I can design, build, and scale applications end-to-end, with a strong grip on modern
+				TypeScript and Python ecosystems. I’m comfortable architecting frontends, building backend services, optimizing
+				performance, and owning systems in production.
 			</div>
 			<div>
-				My virtual doorstep is always open for collaboration, chit-chat, or a good ol&#39; debate on whether JavaScript
-				is a dessert or a superpower. Let&#39;s connect on{' '}
+				I work best in fast-moving environments where clarity, ownership, and clean engineering matter. Beyond code, I
+				value collaboration, thoughtful problem-solving, and building software that actually holds up under real-world
+				usage.
+			</div>
+			<div>
+				My virtual doorstep is always open for collaboration, chit-chat, or a good ol&#39; debate on whether Python is a
+				dessert or a superpower. Let&#39;s connect on{' '}
 				<b>
 					<a href='https://github.com/kavandalal'>GitHub</a>
 				</b>{' '}
@@ -96,6 +105,8 @@ const TechSection = () => {
 	const makeIcon = useMemo(() => {
 		return (params: { name: string; id: string }) => {
 			const { name, id } = params;
+			// see list from below
+			// https://github.com/inttter/md-badges
 			return `https://img.shields.io/badge/-${name}-333.svg?style=for-the-badge&logo=${id}`;
 		};
 	}, []);
