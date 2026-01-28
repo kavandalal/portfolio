@@ -88,7 +88,7 @@ const ExpComponent = (props: ExpComponent) => {
 								<SingleRowData icon={<CalendarDays />} index={index}>
 									{item.start.month} {item.start.year}
 									&nbsp;-&nbsp;
-									{item.end === 'current' ? item.end : `${item.end.month} ${item.end.year}`}
+									{item.end === 'Current' ? item.end : `${item.end.month} ${item.end.year}`}
 								</SingleRowData>
 							</div>
 							<div className='w-full'>
